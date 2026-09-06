@@ -13,6 +13,8 @@ header ul {
   display: flex;
   gap: 40px;
   font-family: Arial;
+  font-weight: bold;
+  color: white;
   list-style: none;
   padding: 0;
   justify-content: center;
@@ -36,4 +38,11 @@ main {
   font-size: 20px;
   cursor: pointer;
   align-items: center;
+}
+
+.cardapio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  border: solid 1px red;
 }
