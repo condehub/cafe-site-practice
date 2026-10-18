@@ -72,7 +72,12 @@ main {
   gap: 20px;
 }
 
-.cardapio-item p {
+.cardapio-item {
   text-align: center;
   font-weight: bold;
+}
+
+ {
+  align-items: center;
+  justify-content: center;
 }
