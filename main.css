@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-light-blue);
-  color: var(--color-white);
+  color: var(--color-dark-blue);
 }
 
 img {
@@ -57,6 +57,11 @@ header ul li {
   cursor: pointer;
 }
 
+header img {
+  width: 50px;
+  cursor: pointer;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -73,10 +78,9 @@ main {
 
 .button-price-container {
   display: flex;
-}
-
-.add-button-container {
-  border: solid red 4px;
+  margin: 10px 0 0 0;
+  gap: 10px;
+  align-items: center;
 }
 
 .cardapio-button {
@@ -112,8 +116,8 @@ main {
   padding: 6px 10px 6px 10px;
   margin: 0;
   border: none;
-  color: #086288;
-  background-color:#FFEFC4;
+  color: var(--color-light-yellow);
+  background-color:var(--color-light-dark-blue);
   cursor: pointer;
   border-radius: 7px;
 } 
