@@ -116,7 +116,7 @@ main {
   padding: 6px 10px 6px 10px;
   margin: 0;
   border: none;
-  color: var(--color-light-yellow);
+  color: var(--color-white);
   background-color:var(--color-light-dark-blue);
   cursor: pointer;
   border-radius: 7px;
