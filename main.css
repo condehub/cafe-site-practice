@@ -71,6 +71,14 @@ main {
   align-items: center;
 }
 
+.button-price-container {
+  display: flex;
+}
+
+.add-button-container {
+  border: solid red 4px;
+}
+
 .cardapio-button {
   border: none;
   background-color: var(--color-dark-blue);
@@ -94,7 +102,7 @@ main {
 .cardapio-item {
   border-radius: 20px;
   padding: 20px;
-  text-align: center;
+  text-align: center; 
   font-weight: bold;
   background-color:#FFEFC4;
 }
