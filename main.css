@@ -4,6 +4,9 @@
   --color-dark-blue: #086288;
   --color-light-dark-blue: #4D8DBA;
   --color-white: #F4FDFF;
+  --card-image-width: 150px;
+  --card-radius: 20px;
+  --card-name-height: 40px;
 }
 
 
@@ -17,8 +20,8 @@ body {
 }
 
 img {
-  width: 150px;
-  border-radius: 20px;
+  width: var(--card-image-width);
+  border-radius: var(--card-radius);
 }
 
 @font-face {
@@ -104,11 +107,30 @@ main {
 }
 
 .cardapio-item {
-  border-radius: 20px;
+  border-radius: var(--card-radius);
   padding: 20px;
   text-align: center; 
   font-weight: bold;
-  background-color:#FFEFC4;
+  background-color: var(--color-light-yellow);
+}
+
+.item-picture {
+  height: var(--card-image-width);
+}
+
+.product-name {
+  height: var(--card-name-height);
+  line-height: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.product-name:hover {
+  cursor: help;
 }
 
 .add-button {
