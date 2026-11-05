@@ -84,6 +84,8 @@ main {
   margin: 10px 0 0 0;
   gap: 10px;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .cardapio-button {
