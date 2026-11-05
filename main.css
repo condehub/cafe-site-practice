@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
   --color-light-blue:  #99D8FF;
   --color-light-yellow:  #FFEFC4;
@@ -11,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   background-color: var(--color-light-blue);
   color: var(--color-dark-blue);
 }
@@ -44,7 +46,6 @@ header .a_GcMg {
 header ul {
   display: flex;
   gap: 40px;
-  font-family: Arial;
   font-weight: bold;
   color: var(--color-light-yellow);
   list-style: none;
@@ -120,5 +121,122 @@ main {
   background-color:var(--color-light-dark-blue);
   cursor: pointer;
   border-radius: 7px;
+} 
+
+/* Painel de Pedidos (Menu / Carrinho)*/
+
+.menu {
+  background-color: var(--color-light-yellow);
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(8, 98, 136, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px); 
+  transition: opacity 0.20s ease, transform 0.20s ease, visibility 0.20s ease;
+}
+
+.cart-icon-container:hover .menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu-header {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light-yellow);
+  padding: 16px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.order-list {
+  margin: 14px;
+  min-height: 80px;
+  max-height: 360px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 6px;
+}
+
+.cart-icon-container {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+/* Scrollbar sutil integrada à paleta */
+.order-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.order-list::-webkit-scrollbar-track {
+  background: rgba(8, 98, 136, 0.06);
+  border-radius: 10px;
+}
+
+.order-list::-webkit-scrollbar-thumb {
+  background: var(--color-light-dark-blue);
+  border-radius: 10px;
+}
+
+.order-item {
+  background-color: var(--color-white);
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 6px rgba(8, 98, 136, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.order-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(8, 98, 136, 0.12);
+}
+
+.order-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.order-item .item-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-dark-blue);
+  flex: 1;
+}
+
+.order-item .item-price {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-light-dark-blue);
+  white-space: nowrap;
 } 
 
