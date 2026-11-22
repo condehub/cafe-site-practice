@@ -3,5 +3,5 @@
 declare(strict_types=1);
 
 interface Notificador {
-  public function notificar(int $pedidoId): void;
+  public function notificar(PedidoPronto $pedido): void;
 }
