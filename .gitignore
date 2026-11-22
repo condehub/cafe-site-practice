@@ -1,0 +1,6 @@
+# Composer dependencies & binary
+backend/vendor/
+backend/composer.phar
+vendor/
+composer.phar
+
